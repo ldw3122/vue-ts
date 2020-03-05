@@ -6,13 +6,14 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "watch": "webpack-dev-server --inline --watch --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "build": "node build/build.js"
+   "build": "webpack --config build/webpack.build.conf.js --progress"
   },
   "dependencies": {
-    "antd": "^3.26.12",
-    "less": "^3.11.1",
-    "less-loader": "^5.0.0",
+    "axios": "^0.17.1",
+    "echarts": "^4.4.0",
+    "iview": "^3.5.4",
     "typescript": "^3.8.2",
     "vue": "^2.5.2",
     "vue-property-decorator": "^8.4.0",
@@ -58,11 +59,14 @@
     "vuex-module-decorators": "^0.9.9",
     "vux": "^2.9.4",
     "vux-loader": "^1.2.9",
+    "vue-router-invoke-webpack-plugin": "^0.3.0",
     "webpack": "^3.6.0",
-    "webpack-bundle-analyzer": "^3.3.2",
-    "webpack-dev-server": "^3.1.11",
+    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0",
-    "yarn": "^1.22.0"
+    "yarn": "^1.22.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.5.0"
   },
   "engines": {
     "node": ">= 6.0.0",
